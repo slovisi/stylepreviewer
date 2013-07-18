@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Style Previewer</title>
+    <link rel="stylesheet" href="css/sp-screen.css">
+    <link rel="stylesheet" href="css/site-screen.css">
+  </head>
+  <body ng-controller="Ctrl">
+    <div class="sp-toolbar">
+    	<h1 class="sp-title">Style Previewer</h1>
+    	<div class="sp-pattern-selector">
+    		<select id="sp-selector">
+          <option value="">(blank)</option> 
+        </select>
+    	</div>
+    </div>
+    <div class="sp-main-wrapper">
+      <div class="sp-pattern-placeholder">
+        <div id="pattern"></div>
+        <pre class="prettyprint linenums" id="sourceCode"></pre>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/style-previewer.js"></script>
+  </body>
+</html>
