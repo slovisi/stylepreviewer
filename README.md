@@ -1,4 +1,4 @@
-stylepreviewer
+Style-Previewer
 ==============
 
 Quick and dirty style guide.
