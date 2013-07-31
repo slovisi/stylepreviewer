@@ -49,12 +49,19 @@ $( document ).ready(function() {
     $('#sp-selector').append(optgroup);
   }, "json");
   $('#sp-selector').on('change', function(){
-    $('#sourceCode').html('<code></code>').removeClass('prettyprinted');
-    $('pre.prettyprint').show();
-    $.get( $(this).val(), function( r ) {
-      $('#pattern').html(r);
-      $('#sourceCode').text(r);
-      prettyPrint();
-    });
+    if ($(this).val() == '') {
+      $('#pattern-placeholder').hide();
+      $('#defaults').show();
+    } else {
+      $('#defaults').hide();
+      $('#pattern-placeholder').show();
+      $('#sourceCode').html('<code></code>').removeClass('prettyprinted');
+      $('pre.prettyprint').show();
+      $.get( $(this).val(), function( r ) {
+        $('#pattern').html(r);
+        $('#sourceCode').text(r);
+        prettyPrint();
+      });
+    }
   });
 });

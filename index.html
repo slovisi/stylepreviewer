@@ -11,12 +11,27 @@
     	<h1 class="sp-title">Style Previewer</h1>
     	<div class="sp-pattern-selector">
     		<select id="sp-selector">
-          <option value="">(blank)</option> 
+          <option value="">Select a pattern</option> 
         </select>
     	</div>
     </div>
     <div class="sp-main-wrapper">
-      <div class="sp-pattern-placeholder">
+      <div class="sp-defaults" id="defaults">
+        <h2>Project Font Families :</h2>
+        <!-- HERE PUT YOUR OWN FONT FAMILIES -->
+        <p class="sp-font-family-1">Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;</p>
+        <p class="sp-font-family-2">Verdana, Arial, sans-serif;</p>
+        <h2>Project Colors :</h2>
+        <div class="sp-colors">
+          <!-- HERE PUT YOUR OWN COLORS -->
+          <div class="sp-color-block sp-color-1"><span class="sp-color-code">#000000</span></div>
+          <div class="sp-color-block sp-color-2"><span class="sp-color-code">#FFFFFF</span></div>
+          <div class="sp-color-block sp-color-3"><span class="sp-color-code">#FF6600</span></div>
+          <div class="sp-color-block sp-color-4"><span class="sp-color-code">#3C3C3C</span></div>
+          <div class="sp-color-block sp-color-5"><span class="sp-color-code">#f3f8fb</span></div>
+        </div>
+      </div>
+      <div class="sp-pattern-placeholder" id="pattern-placeholder">
         <div id="pattern"></div>
         <pre class="prettyprint linenums" id="sourceCode"></pre>
       </div>

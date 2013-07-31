@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic);
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +8,7 @@ body {
 
 .sp-toolbar {
   width: 100%;
-  background-color: teal;
+  background-color: #09C;
   color: white;
   overflow: hidden;
 }
@@ -13,16 +16,30 @@ body {
 .sp-title {
   margin: 0.5em;
   float: left;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #000;
+  text-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px;
 }
 
 .sp-pattern-selector {
   float: right;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
 }
 
 .sp-main-wrapper {
   padding: 1em;
+}
+
+.sp-defaults {
+  padding: .5em .3em;
+  font-family: 'Playfair Display', serif;
+}
+
+.sp-defaults h2 {
+  font-weight: 400;
 }
 
 .sp-pattern-placeholder > pre {
@@ -34,9 +51,73 @@ body {
   padding: .5em .3em;
 }
 
+.sp-colors {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sp-color-block {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #ECECEC;  
+  margin-right: 10px;
+  position: relative;
+}
+
+.sp-color-code {
+  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', serif, monospace;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------
+ Projects Specifics
+---------------------------------------------------------------------------- */
+.sp-font-family-1 {
+  font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+}
+
+.sp-font-family-2 {
+  font-family: Verdana, Arial, sans-serif;  
+}
+
+.sp-color-1 {
+  background-color: #000000;
+}
+
+.sp-color-2 {
+  background-color: #FFFFFF; 
+}
+
+.sp-color-3 {
+  background-color: #FF6600;
+}
+
+.sp-color-4 {
+  background-color: #3C3C3C;
+}
+
+.sp-color-5 {
+  background-color: #f3f8fb;
+}
+
 /* -------------------------------------------------------------------------
  Prettyprint
 ---------------------------------------------------------------------------- */
+.prettyprint {
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 0.875em;
+}
 .pln {
   color: #fff;
 }
